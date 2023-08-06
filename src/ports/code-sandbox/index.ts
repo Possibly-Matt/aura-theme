@@ -10,6 +10,7 @@ export async function CodeSandboxPort(Aura: AuraAPI) {
   const previewURL = `https://github.com/${info.author.username}/assets/blob/master/images/${info.slug}/aura-code-sandbox-preview.png?raw=true`
   const templateFolder = resolve(__dirname, 'templates')
   const outputDist = resolve(folders.distFolder, 'code-sandbox', 'themes')
+  const change = 'a'
 
   await createPort({
     outputDist,
